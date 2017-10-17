@@ -14,14 +14,12 @@ def mymax(x,y):
 def Listmax(l):
     lmax = 0
     for i in l:
-        if i> lmax:
+        if i < lmax:
             lmax = 1
     return lmax
 
 if __name__ == "__main__":
     import sys
-    myList =[]
-    for arg in sys.argv[1:]:
-        myList.append(int(arg))
-    print(listmax(myList))
+    myList =[int(arg) for arg in sys.argv[1:]]
+
     
